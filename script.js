@@ -7,6 +7,7 @@ btn.addEventListener('click', function(){
     btn.style.pointerEvents = 'none';
 
     var num = 50 + Math.floor(Math.random()*50);
+    console.log('Your file will be downloaded in',num/10,'seconds');
 
     let hey = setInterval(() => {
        grow++;
@@ -19,4 +20,6 @@ btn.addEventListener('click', function(){
         btn.innerHTML = 'Downloaded';
         btn.style.opacity = 0.5;
     }, num*100);
+
+
 })
